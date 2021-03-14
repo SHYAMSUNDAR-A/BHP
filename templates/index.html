@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bengaluru House Price Predictor</title>
+            <link rel= "stylesheet" type= "text/css" href= "static/style.css">
+    </head>
+  
+    <body>
+        <div class= "header">
+            <form action= "{{url_for ('predict') }}", method= "POST">
+                <h2> Bengaluru <span> House</span> Price <span>Predictor</span></h2>
+		<div class="form-control">
+                    
+                        <select id="location" name="location">
+                            {% for location in locations %}
+                                <option value="{{ location }}">{{ location }}</option>
+                            {% endfor %}
+                        </select>
+		</div>
+		<hr/>
+
+                        <input class= "search-field total_sqft" name= "total_sqft" id= "total_sqft" type= "text"
+                        placeholder= "total_sqft"/>
+                        
+                        <input class= "search-field bath" name= "bath" id= "bath" type= "text"
+                        placeholder= "No of Bathrooms"/>
+		<div>
+		<hr/>
+                        <input class= "search-field balcony" name= "balcony" id= "balcony" type= "text"
+                        placeholder= "No of Balcony"/>
+                        
+                        <input class= "search-field BHK" name= "BHK" id= "BHK" type= "text"
+                        placeholder= "BHK"/>
+                </div>     
+                <hr/>   
+                        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+		<div>
+                	<p style= "color:#008B8B; font-family:Lucida Console; font-size: 20px;">{{ prediction_text }}</p>
+            	</div>
+                    
+            </form>
+            
+        </div>
+    </body>
+</html>
+    
+
+
+
+
+
+
+
+
+

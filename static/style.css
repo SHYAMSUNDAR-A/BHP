@@ -1,0 +1,65 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+.header 
+{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Courier New;
+}
+
+h2
+{
+    text-align: center;
+    color: #E9967A;
+    margin-bottom: 70px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+span 
+{
+    color: #3CB371;
+}
+
+
+.selectpicker
+{
+    height: 25px;
+    padding: 10px;
+    border-radius: 5px 0px 5px 0px;
+	background: #D8BFD8;
+}
+
+
+.search-field
+{
+    height: 8px;
+    padding: 10px;
+    border-radius: 5px 0px 5px 0px;
+	background: #D8BFD8;
+}
+
+
+
+.btn btn-primary btn-block btn-large
+{
+    border-radius: 5px 0px 5px 0px;
+    width: 100px;
+    height: 30px;
+    border: ridge;
+    outline: none;
+    border-left: 6px solid blue;
+    background-color: lightgrey;
+}
+
+
+
+
